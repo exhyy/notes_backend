@@ -11,4 +11,5 @@ class Note(models.Model):
         return self.body[0:50]
     
     class Meta:
+        db_table = 'note'
         ordering = ['-updated']
